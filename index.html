@@ -32,7 +32,7 @@
           <a class="header-logo logo link" href="./index.html">
             Web<span class="logo-header">Studio</span></a
           >
-          <!-- Header section - Navigation -->
+          <!-- Navigation -->
           <ul class="header-list list">
             <li class="header-item">
               <a class="header-link current link" href="./index.html">Studio</a>
@@ -45,7 +45,7 @@
             </li>
           </ul>
         </nav>
-        <!-- Header section - Contacts -->
+        <!-- Contacts -->
         <address class="header-contact">
           <ul class="header-contact-list list">
             <li class="header-contact-item">
@@ -62,22 +62,131 @@
             </li>
           </ul>
         </address>
+        <!-- Mobile button -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="mobile-menu-link link">Studio</a></li>
+        <li>
+          <a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a>
+        </li>
+        <li><a href="" class="mobile-menu-link link">Contacts</a></li>
+      </ul>
+
+      <ul class="mobile-menu-contact-list list">
+        <li class="mobile-menu-contact-item">
+          <a
+            class="mobile-menu-contact-link link"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="mobile-menu-contact-item">
+          <a class="mobile-menu-contact-link link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+      </ul>
+
+      <!-- переписати класи з footer на mobile-menu -->
+      <div class="footer-social-media container">
+        <ul class="footer-socials-list list">
+          <li class="footer-socials-item">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferret"
+              class="footer-socials-item-link link"
+              aria-label="Instagram icon"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-socials-item">
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noopener noreferret"
+              class="footer-socials-item-link link"
+              aria-label="Twitter icon"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-socials-item">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferret"
+              class="footer-socials-item-link link"
+              aria-label="Facebook icon"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-socials-item">
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferret"
+              class="footer-socials-item-link link"
+              aria-label="Linkedin icon"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Main section -->
     <main class="page-main">
       <!-- Hero section -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="btn btn-dark" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
       <!-- Modal window -->
-      <div class="backdrop is-hidden" data-modal>
+      <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal-btn" type="button" data-modal-close>
             <svg class="modal-icon" width="8" height="8">
@@ -168,10 +277,10 @@
             </button>
           </form>
         </div>
-      </div>
+      </div> -->
 
       <!-- Features section 1 -->
-      <section class="features">
+      <!-- <section class="features">
         <div class="features-container container">
           <h2 class="features-title" hidden>Feature</h2>
           <ul class="features-list list">
@@ -225,10 +334,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- About section 2 -->
-      <section class="page-about">
+      <!-- <section class="page-about">
         <div class="container">
           <h2 class="about-title header-two">What are we doing</h2>
           <ul class="about-list list">
@@ -258,10 +367,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Team section 3 -->
-      <section class="page-team">
+      <!-- <section class="page-team">
         <div class="container">
           <h2 class="team-title header-two">Our Team</h2>
           <ul class="team-list list">
@@ -531,10 +640,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Customers -->
-      <section class="page-customers">
+      <!-- <section class="page-customers">
         <div class="customers-container container">
           <h2 class="customers-title header-two">Customers</h2>
           <ul class="customers-list list">
@@ -581,11 +690,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Footer section -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-container container">
         <div class="footer-logo">
           <a class="footer-logo-link logo link" href="./index.html"
@@ -680,7 +789,14 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

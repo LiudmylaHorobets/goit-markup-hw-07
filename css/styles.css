@@ -63,8 +63,8 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 /* Tablet styles */
@@ -716,6 +716,11 @@ body {
     display: none;
   }
 }
+.about-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
 
 .about-title,
 .team-title {
@@ -723,7 +728,6 @@ body {
   margin-bottom: 72px;
 }
 
-.about-list,
 .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -923,8 +927,8 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    outline: 2px solid red;
-    outline-offset: -2px;
+    /* outline: 2px solid red;
+    outline-offset: -2px; */
   }
 }
 .footer-logo-container {
@@ -1127,6 +1131,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 .portfolio-cards-item-link:hover .overlay,
 .portfolio-cards-item-link:focus .overlay {
   transform: translateY(0);

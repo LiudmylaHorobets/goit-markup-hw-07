@@ -1058,15 +1058,36 @@ body {
 --------------------------- Portfolio ----------------------------
 ================================================================ = */
 .page-portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding: 48px 0;
+}
+@media only screen and (min-width: 768px) {
+  .page-portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .page-portfolio {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
 }
 .portfolio-list {
   display: flex;
-  justify-content: center;
-  display: flex;
+  flex-wrap: wrap;
   gap: 24px;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-list {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .portfolio-list {
+    margin-bottom: 72px;
+  }
 }
 .container-portfolio-cards {
   padding: 32px 16px;
@@ -1097,6 +1118,11 @@ body {
   flex-wrap: wrap;
   gap: 48px 24px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
+  .cards-list {
+    gap: 72px 24px;
+  }
+}
 .portfolio-cards-box {
   position: relative;
   overflow: hidden;
@@ -1126,9 +1152,19 @@ body {
   color: var(--cloud-text-cl);
 }
 .portfolio-cards-item {
-  width: calc((100% - (24px * 2)) / 3);
+  width: 396px;
 
   transition: box-shadow var(--anim-fast);
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-cards-item {
+    width: 356px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .portfolio-cards-item {
+    width: calc((100% - (24px * 2)) / 3);
+  }
 }
 .portfolio-cards-item-link:hover,
 .portfolio-cards-item-link:focus {

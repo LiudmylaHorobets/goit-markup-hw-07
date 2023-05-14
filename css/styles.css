@@ -237,8 +237,7 @@ body {
 
 /* Hero section */
 
-.hero,
-.footer {
+.hero {
   background-color: var(--navy-blue-text-cl);
 }
 .hero {
@@ -723,9 +722,7 @@ body {
   min-height: 40px;
   margin-bottom: 72px;
 }
-.team-list {
-  --items: 1;
-}
+
 .about-list,
 .team-list {
   display: flex;
@@ -735,15 +732,10 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .team-list {
-    --items: 2;
     gap: 24px;
   }
 }
-@media only screen and (min-width: 768px) {
-  .team-list {
-    --items: 4;
-  }
-}
+
 /* Cards section 1 */
 
 .body-text {
@@ -826,12 +818,16 @@ body {
 @media only screen and (max-width: 1158px) {
   .page-customers {
     padding: 96px 0;
-    max-width: 552px;
   }
 }
 @media only screen and (min-width: 1158px) {
   .page-customers {
     padding: 120px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
+  .customers-container {
+    max-width: 552px;
   }
 }
 .customers-title {
@@ -841,8 +837,7 @@ body {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 72px;
-  column-gap: 16px;
+  gap: 72px 16px;
   justify-content: center;
 }
 @media only screen and (min-width: 1158px) {
@@ -853,6 +848,15 @@ body {
   }
 }
 
+.customers-item {
+  width: calc((100% - (24px * 1)) / 2);
+}
+
+@media only screen and (min-width: 768px) {
+  .customers-item {
+    width: calc((100% - (24px * 2)) / 3);
+  }
+}
 @media only screen and (min-width: 1158px) {
   .customers-item {
     width: calc((100% - (24px * 5)) / 6);
@@ -881,31 +885,46 @@ body {
 }
 
 /* Footer section */
-
-.footer-logo {
-  max-width: 264px;
-  margin-right: 120px;
+.footer {
+  padding: 96px 0;
+  background-color: var(--navy-blue-text-cl);
+  display: flex;
+}
+/* @media only screen and (min-width: 1158px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+} */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
+  margin: 0 auto;
+}
+/* @media only screen and (min-width: 1158px) {
+  .footer-container {
+    align-items: baseline;
+  }
+} */
+.footer-logo-container {
+  width: 264px;
 }
 .logo-footer {
   color: var(--cloud-text-cl);
 }
 .footer-logo-link {
-  display: inline-block;
+  display: block;
+  text-align: center;
   margin-bottom: 16px;
-}
-.footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.footer-container {
-  display: flex;
-  align-items: baseline;
 }
 
 .footer-text {
+  font-weight: 400;
+
   color: var(--cloud-text-cl);
   width: 264px;
-  font-weight: 400;
 }
 .footer-title {
   color: var(--white-text-cl);
@@ -915,7 +934,10 @@ body {
   margin-bottom: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  text-align: center;
 }
+
 .footer-socials-list {
   display: flex;
   gap: 16px;
@@ -938,15 +960,19 @@ body {
   background-color: var(--green-text-cl);
 }
 
-.subscribe-form-wrapper {
+.footer-form {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 .subscribe-form-input {
   padding: 8px 16px;
   background-color: transparent;
-  width: 264px;
+
+  width: 398px;
   height: 40px;
+
   border: 1px solid var(--white-text-cl);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -982,7 +1008,10 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border: 1px solid var(--ocean-text-cl);
 }
-/* Portfolio */
+
+/* ===============================================================
+--------------------------- Portfolio ----------------------------
+================================================================ = */
 .page-portfolio {
   padding-top: 96px;
   padding-bottom: 120px;

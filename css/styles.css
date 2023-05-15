@@ -68,7 +68,6 @@ body {
   /* outline: 2px solid red;
   outline-offset: -2px; */
 }
-
 /* Tablet styles */
 @media only screen and (min-width: 768px) {
   .container {
@@ -1230,7 +1229,6 @@ input {
   padding: 80px 35px 40px 40px;
   background-color: var(--white-text-cl);
   z-index: 999;
-
   display: flex;
   flex-direction: column;
 
@@ -1291,7 +1289,7 @@ input {
 }
 .mobile-tel {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 1.11;
 
   letter-spacing: 0.02em;
@@ -1299,6 +1297,11 @@ input {
 
   display: flex;
   margin-bottom: 40px;
+}
+@media (min-width: 428px) {
+  .mobile-tel {
+    font-size: 36px;
+  }
 }
 .mobile-mail {
   font-weight: 500;
@@ -1313,7 +1316,12 @@ input {
 }
 .mobile-menu-socials-list {
   display: flex;
-  gap: 56px;
+  gap: 20px;
+}
+@media (min-width: 428px) {
+  .mobile-menu-socials-list {
+    gap: 56px;
+  }
 }
 .mobile-menu-socials-item-link {
   display: flex;
